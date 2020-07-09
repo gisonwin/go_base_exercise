@@ -1,0 +1,12 @@
+syntax ="proto3"; //采用proto3语法,所有成员均采用类似Go语言中的零值初始化(不再支持自定义默认值),因此消息成员也不再需要
+//支持required特性.
+
+package main;//声明当前是main包,针对不同语言定制对应的包路径和名称
+
+message String{ //message关键字定义一个新的String类型,在最终生成的Go语言中对应一个String的结构体Struct.它只有一个字符串
+//类型的value成员,1为当前变量的序号或排序.
+    string value =1;
+}
+service HelloService{
+    rpc Hello(String) returns (String);
+}
