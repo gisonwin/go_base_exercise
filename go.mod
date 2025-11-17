@@ -10,5 +10,5 @@ require (
 	github.com/go-redis/redis v6.15.8+incompatible // indirect
 	github.com/golang/protobuf v1.4.2
 	google.golang.org/appengine v1.6.6 // indirect
-	google.golang.org/protobuf v1.25.0
+	google.golang.org/protobuf v1.33.0
 )
